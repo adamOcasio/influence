@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 import './widgets/influencer-list.dart';
 import './providers/collection_provider.dart';
 import './screens/collections_screen.dart';
+import './screens/store_screen.dart';
+import './screens/cart_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,6 +31,8 @@ class MyApp extends StatelessWidget {
         ),
         routes: {
           CollectionsScreen.routeName: (ctx) => CollectionsScreen(),
+          StoreScreen.routeName: (ctx) => StoreScreen(),
+          CartScreen.routeName: (ctx) => CartScreen(),
         },
       ),
     );

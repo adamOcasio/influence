@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:meta_merch/screens/store_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../providers/collection_provider.dart';
 import '../models/collection.dart';
+import 'cart_screen.dart';
 
 class CollectionsScreen extends StatelessWidget {
   static const routeName = '/collections-screen';
@@ -17,7 +19,9 @@ class CollectionsScreen extends StatelessWidget {
         alignment: Alignment.center,
         children: <Widget>[
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pushNamed(StoreScreen.routeName);
+            },
             child: Container(
               height: 200,
               width: MediaQuery.of(context).size.width - 20,

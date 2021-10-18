@@ -50,6 +50,7 @@ flutter:
     - assets/images/ludwig-promo.png
     - assets/images/tyler1-promo.png
     - assets/images/pokimane-promo.png
+    - assets/images/product-placeholder.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

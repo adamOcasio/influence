@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatefulWidget {
+  static const routeName = 'cart-screen';
   @override
   _CartScreenState createState() => _CartScreenState();
 }
