@@ -16,19 +16,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (BuildContext context) => CollectionProvider(),
+      create: (_) => CollectionProvider(),
       child: MaterialApp(
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text(
-              'MetaMerch',
-            ),
-          ),
-          body: CollectionsScreen(),
-        ),
+        home: CollectionsScreen(),
         routes: {
           CollectionsScreen.routeName: (ctx) => CollectionsScreen(),
           StoreScreen.routeName: (ctx) => StoreScreen(),
